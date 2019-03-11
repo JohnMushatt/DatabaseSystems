@@ -1,0 +1,21 @@
+John Mushatt Christian Tweed 
+
+Notes:  We primarily worked in SQL Developer when writing our .sql file for improved debugging and editing. 
+	After finishing our project and running it in PuttY, it seems that there are two very odd situations
+	in which while SQL says an insert failed/violated a constraint, the value is still present and is
+	able to be used in querries indicating that this might be a bug with SQL or Putty as the value IS
+	successfully inserted into the table in both PuttY and SQL Developer. This happens for the equipement
+	with id:'A01-02X as well as the equipment id:'test_serial_5'. The querries/triggers later on also 
+	show that these values were correctly inserted and handled in both Putty and SQL further indicating this bug. 
+	
+	In addition to this, we just wanted to include this for clarification:
+
+	For the various errors that occur after certain inserts/updates, these are produced by the trigger rejected bad data which we confirmed with the TA/PLA Oleksandr Narykov 
+	as being the correct/intended behavior for the trigger doing its job
+	
+	We also asked the TA/PLA Kyle Richards about where to insert the "Set serveroutput on;" in the trigger or .sql file and he said it did not need to be included in it.
+	However after trying both this and setting it on in the sql server the output for the last trigger does not appear. However in SQL Developer turning on DBMS ouput under the 
+	view options allows us to see the correct dbms_output.putline(); commands that correctly dispaly the patient and doctor information that is requested.
+
+	We are going to include files of both the Putty and SQL Developer ouputs to show that it is working incase something goes wrong. Also if you would like to see for yourself 
+	the ouput within SQL developer please contact John Mushatt @ jemushatt@wpi.edu for explanation/walkthrough

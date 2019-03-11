@@ -1,0 +1,783 @@
+
+Table PATIENTS dropped.
+
+
+Table DOCTOR dropped.
+
+
+Table EMPLOYEES dropped.
+
+
+Table ROOMS dropped.
+
+
+Table EQUIPMENTTYPES dropped.
+
+
+Table EQUIPMENT dropped.
+
+
+Table ROOMSERVICE dropped.
+
+
+Table ROOMACCESS dropped.
+
+
+Table ADMISSION dropped.
+
+
+Table EXAMINE dropped.
+
+
+Table STAYIN dropped.
+
+
+Table PATIENTS created.
+
+
+Table DOCTOR created.
+
+
+Table EMPLOYEES created.
+
+
+Table ROOMS created.
+
+
+Table EQUIPMENTTYPES created.
+
+
+Table EQUIPMENT created.
+
+
+Table ROOMSERVICE created.
+
+
+Table ROOMACCESS created.
+
+
+Table ADMISSION created.
+
+
+Table EXAMINE created.
+
+
+Table STAYIN created.
+
+
+Trigger INSURANCEUPDATE compiled
+
+
+Trigger DOCTORVISIT compiled
+
+
+Trigger REGULAREMPLOYEECHECK compiled
+
+
+Trigger DIVISIONMANAGERCHECK compiled
+
+
+Trigger GENERALMANAGERCHECK compiled
+
+
+Trigger CTULTRACHECK compiled
+
+
+Trigger PATIENTLEAVEUPDATE compiled
+
+
+Trigger PATIENTLEAVEUPDATE compiled
+
+
+Trigger EMERGENCYTRIGGER compiled
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 431 in command -
+INSERT INTO employees
+VALUES('div5','Test1','Failure1',100000,'Just a dude', '2', 'Division Manager', 'gm3')
+Error report -
+ORA-01403: no data found
+ORA-06512: at "JEMUSHATT.DIVISIONMANAGERCHECK", line 5
+ORA-04088: error during execution of trigger 'JEMUSHATT.DIVISIONMANAGERCHECK'
+
+
+Error starting at line : 433 in command -
+INSERT INTO employees
+VALUES('div5','Test2','Failure2',100000,'Just a dude', '2', 'Division Manager', NULL)
+Error report -
+ORA-01403: no data found
+ORA-06512: at "JEMUSHATT.DIVISIONMANAGERCHECK", line 5
+ORA-04088: error during execution of trigger 'JEMUSHATT.DIVISIONMANAGERCHECK'
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 500 in command -
+insert into equipment VALUES('test_serial_1', 'CT Scanner', 2000, '11-10-2006', '1')
+Error report -
+ORA-20004: Cannot insert record because purchase year is not recent enough
+ORA-06512: at "JEMUSHATT.CTULTRACHECK", line 6
+ORA-04088: error during execution of trigger 'JEMUSHATT.CTULTRACHECK'
+
+
+Error starting at line : 501 in command -
+insert into equipment VALUES('test_serial_2', 'Ultrasound', 2000, '11-10-2006', '1')
+Error report -
+ORA-20004: Cannot insert record because purchase year is not recent enough
+ORA-06512: at "JEMUSHATT.CTULTRACHECK", line 6
+ORA-04088: error during execution of trigger 'JEMUSHATT.CTULTRACHECK'
+
+
+Error starting at line : 502 in command -
+insert into equipment VALUES('test_serial_3', 'Ultrasound', NULL, '11-10-2006', '1')
+Error report -
+ORA-01400: cannot insert NULL into ("JEMUSHATT"."EQUIPMENT"."PURCHASEYEAR")
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 604 in command -
+insert into examine VALUES('1',1,NULL)
+Error report -
+ORA-20004: Cannot insert record because comment can't be null
+ORA-06512: at "JEMUSHATT.DOCTORVISIT", line 12
+ORA-04088: error during execution of trigger 'JEMUSHATT.DOCTORVISIT'
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+View CRITICALCASES created.
+
+
+View DOCTORSLOAD created.
+
+
+PATIENT_SSN               FIRSTNAME                 LASTNAME                  NUMBEROFADMISSIONSTOICU
+------------------------- ------------------------- ------------------------- -----------------------
+987-65-4321               Gordon                    Ramsey                                          3
+123-45-6789               Bobby                     Flay                                            5
+
+
+DOCTORID             GENDER     LOAD       
+-------------------- ---------- -----------
+1                    Male       Underloaded
+2                    Female     Overloaded 
+3                    Male       Underloaded
+4                    Female     Underloaded
+9                    Male       Underloaded
+
+
+PATIENT_SSN               FIRSTNAME                 LASTNAME                  NUMBEROFADMISSIONSTOICU
+------------------------- ------------------------- ------------------------- -----------------------
+123-45-6789               Bobby                     Flay                                            5
+
+
+ID                   FIRSTNAME            LASTNAME            
+-------------------- -------------------- --------------------
+2                    Smith                Carlos              
+
+
+DOCTORID             PATIENT_SSN               DOCTOR_COMMENT                                                                                      
+-------------------- ------------------------- ----------------------------------------------------------------------------------------------------
+1                    123-45-6789               he still hurtin                                                                                     
+1                    123-45-6789               He hurtin                                                                                           
+
+
+   ROOMNUM
+----------
+         3
+         5
+         7
+         9
+        10
+
+
+ID                   FNAME                LNAME                    SALARY
+-------------------- -------------------- -------------------- ----------
+reg6                 Zach                 Smith                    100000
+reg8                 John                 Smith                    100000
+
+
+PATIENTSSN                  SUM
+-------------------- ----------
+644-35-8268              329109
+123-45-6789                4420
+987-65-4321                5135
+782-55-0829              457623
+840-52-2349              303120
+934-58-6472              866260
+602-58-7826               81481
+905-90-0947                1243
+681-76-9487                 845
+111-22-3333              739519
+158-42-5224             1124961
+
+PATIENTSSN                  SUM
+-------------------- ----------
+993-64-1253            13000780
+
+12 rows selected. 
+
+
+PATIENTSSN           FIRSTNAME                 LASTNAME                  VISIT_COUNT
+-------------------- ------------------------- ------------------------- -----------
+840-52-2349          Rachel                    Brewer                              2
+681-76-9487          Katrina                   Norton                              1
+158-42-5224          Maxine                    Singleton                           3
+644-35-8268          Tiffany                   Olson                               3
+111-22-3333          Carl                      Wheezer                             7
+905-90-0947          Philip                    Newton                              2
+602-58-7826          Christian                 Wolfe                               2
+987-65-4321          Gordon                    Ramsey                              7
+782-55-0829          Grace                     Morton                              2
+993-64-1253          Darnell                   Ramos                               2
+934-58-6472          Randall                   Craig                               4
+
+PATIENTSSN           FIRSTNAME                 LASTNAME                  VISIT_COUNT
+-------------------- ------------------------- ------------------------- -----------
+123-45-6789          Bobby                     Flay                                6
+
+12 rows selected. 
+
+
+   ROOMNUM
+----------
+         1
+
+
+EMPID                     ROOMS
+-------------------- ----------
+reg3                          1
+reg2                          3
+reg1                          2
+
+
+       CNT
+----------
+         4
+         2
+        10
+
+
+PATIENTSSN           FIRSTNAME                 LASTNAME                  FUTUREVISIT         
+-------------------- ------------------------- ------------------------- --------------------
+111-22-3333          Carl                      Wheezer                   22-APR-19           
+111-22-3333          Carl                      Wheezer                   2025-12-10          
+111-22-3333          Carl                      Wheezer                   2025-12-10          
+111-22-3333          Carl                      Wheezer                   2020-12-10          
+602-58-7826          Christian                 Wolfe                     2020-12-10          
+934-58-6472          Randall                   Craig                     2020-12-10          
+
+6 rows selected. 
+
+
+ID                   MODEL                NUMBEROFUNITS
+-------------------- -------------------- -------------
+Breath Monitor       Whoopscoop                       4
+IV                   Skribblebop                     10
+CT Scanner           Skribblebop                     10
+Ultrasound           Skribblebop                     10
+
+
+FUTUREVISIT         
+--------------------
+2020-12-10
+2025-12-10
+2025-12-10
+22-APR-19
+
+
+DOCTORID              EXAMCOUNT
+-------------------- ----------
+4                             3
+
+
+TYPEID              
+--------------------
+Breath Monitor
+Heart Monitor
+IV
+
